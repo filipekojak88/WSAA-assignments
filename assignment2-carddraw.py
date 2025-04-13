@@ -33,6 +33,10 @@ suits= []
 
 # Counter for the card number
 i=1
+# Print the header
+print("================================================")
+print("You drew the following cards:")
+print("================================================")
 # Loop through the drawn cards
 for card in cards:
     value = card["value"]
@@ -44,6 +48,8 @@ for card in cards:
     suits.append(suit)
     # Increment the counter
     i=i+1
+# Print middle line
+print("================================================")
 
 # 8 - Count the occurrences of each value and suit
 value_counts = Counter(values)
@@ -92,3 +98,6 @@ if all_same_suit:
     print("Congratulations! All cards are of the same suit.")
 if not (pairs or triples or straight or all_same_suit):
     print("No special combinations found. Try again")
+
+# Print the footer
+print("================================================")

@@ -1,3 +1,4 @@
+# Title: Card Draw
 # Description: This script draws 5 cards from a shuffled deck
 # and checks for pairs, triples, straights, and all of the same suit.
 # Author: Filipe Carvalho

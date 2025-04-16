@@ -1,7 +1,9 @@
-# This program retrieves the dataset for the "exchequer account (historical series)" from the CSO,
+# Title: Assignment 03 - CSO Dataset Fetcher and Storage
+# Description: This program retrieves the dataset for the "exchequer account (historical series)" from the CSO,
 # and stores it into a file called "cso.json"
 # Author: Filipe Carvalho
 
+# Import the necessary libraries
 import requests
 import json
 

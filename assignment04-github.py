@@ -32,4 +32,5 @@ replace_content = re.sub(r"\bAndrew\b", "Filipe", content_of_file, flags=re.IGNO
 
 # Update the file with the modified content
 git_hub_response = repo.update_file(file_info.path, "updated by python program assignment04-github.py", replace_content, file_info.sha)
+# Print the response from GitHub
 print(git_hub_response)

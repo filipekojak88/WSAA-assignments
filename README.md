@@ -1,6 +1,6 @@
 # WSAA Assignments Repository
 
-This repository contains completed Python assignments for the **Web Services and Application Architecture (WSAA)** module. Each assignment demonstrates practical usage of Python for web services, APIs, and GitHub automation.
+This repository contains completed Python assignments for the **Web Services and Application module. Each assignment demonstrates practical usage of Python for web services, APIs, and GitHub automation.
 
 ---
 
@@ -101,11 +101,11 @@ Secure token-based authentication handling
 - Prints a clean summary of the hand and its evaluation
 
 `Scrpt`:
-The requests module is used to send HTTP requests to the Deck of Cards API. The requests.get() function is referenced in the script to fetch the shuffled deck and draw cards from it [1](1) [4](4). The response.json() function is used to parse the response from the API [5](5).
-The json module is employed to handle the JSON responses returned by the API. The json method is used to decode the API responses into Python dictionaries [2](2).
-The collections.Counter is utilized to count the occurrences of values and suits among the drawn cards. The Counter class helps identify pairs and triples in the deck [3](3).
-The sorted() function is used to sort the card values' indices to check if they form a straight [7](7).
-The set data structure is used to check if all the drawn cards are of the same suit by ensuring the set of suits has only one unique value [8](8).
+The requests module is used to send HTTP requests to the Deck of Cards API. The requests.get() function is referenced in the script to fetch the shuffled deck and draw cards from it [1](#1) [4](#4). The response.json() function is used to parse the response from the API [5]#(5).
+The json module is employed to handle the JSON responses returned by the API. The json method is used to decode the API responses into Python dictionaries [2](#2).
+The collections.Counter is utilized to count the occurrences of values and suits among the drawn cards. The Counter class helps identify pairs and triples in the deck [3](#3).
+The sorted() function is used to sort the card values' indices to check if they form a straight [7](#7).
+The set data structure is used to check if all the drawn cards are of the same suit by ensuring the set of suits has only one unique value [8](#8).
 
 ### Assignment 03 - CSO Dataset Fetcher
 
@@ -151,25 +151,45 @@ I am currently a Quality Engineer with a Production Engineering & Management bac
 
 ## Reference:
 
+<a id="01">[01]</a> Requests. (n.d.). Requests: HTTP for Humans. Available at: https://docs.python-requests.org/en/latest/ [Accessed 17 Apr. 2025].  
 
-[1] Requests. (n.d.). Requests: HTTP for Humans. Available at: https://docs.python-requests.org/en/latest/ [Accessed 17 Apr. 2025].
-[2] Python Software Foundation. (n.d.). json — JSON encoder and decoder. Available at: https://docs.python.org/3/library/json.html [Accessed 17 Apr. 2025].
-[3] Python Software Foundation. (n.d.). collections — High-performance container datatypes. Available at: https://docs.python.org/3/library/collections.html#collections.Counter [Accessed 17 Apr. 2025].
-[4] Requests. (n.d.). Requests Quickstart. Available at: https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request [Accessed 17 Apr. 2025].
-[5] Requests. (n.d.). Response.json() — Requests 2.x documentation. Available at: https://docs.python-requests.org/en/latest/api/#requests.Response.json [Accessed 17 Apr. 2025].
-[6] Python Software Foundation. (n.d.). Data Structures. Available at: https://docs.python.org/3/tutorial/datastructures.html [Accessed 17 Apr. 2025].
-[7] Python Software Foundation. (n.d.). sorted() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#sorted [Accessed 17 Apr. 2025].
-[8] Python Software Foundation. (n.d.). set — Set types. Available at: https://docs.python.org/3/library/stdtypes.html#set [Accessed 17 Apr. 2025].
-[9] Python Software Foundation. (n.d.). len() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#len [Accessed 17 Apr. 2025].
-[10] Python Software Foundation. (n.d.). print() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#print [Accessed 17 Apr. 2025].
-[11] Python Software Foundation. (n.d.). for Statements — Python documentation. Available at: https://docs.python.org/3/tutorial/controlflow.html#for-statements [Accessed 17 Apr. 2025].
-[12] Python Software Foundation. (n.d.). if Statements — Python documentation. Available at: https://docs.python.org/3/tutorial/controlflow.html#if-statements [Accessed 17 Apr. 2025].
-[13] Deck of Cards API. (n.d.). Deck of Cards API Documentation. Available at: https://deckofcardsapi.com/ [Accessed 17 Apr. 2025].
-[14] Python Software Foundation. (n.d.). open() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#open [Accessed 17 Apr. 2025].
-[15] Python Software Foundation. (n.d.). json.dump() — Python documentation. Available at: https://docs.python.org/3/library/json.html#json.dump [Accessed 17 Apr. 2025].
-[16] Python Software Foundation. (n.d.). main — Top-level script environment. Available at: https://docs.python.org/3/library/__main__.html [Accessed 17 Apr. 2025].
-[17] Python Software Foundation. (n.d.). re — Regular expression operations. Available at: https://docs.python.org/3/library/re.html [Accessed 17 Apr. 2025].
-[18] GitHub. (n.d.). PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/ [Accessed 17 Apr. 2025].
-[19] Python Software Foundation. (n.d.). getattr() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#getattr [Accessed 17 Apr. 2025].
-[20] Python Software Foundation. (n.d.). re.sub() — Python documentation. Available at: https://docs.python.org/3/library/re.html#re.sub [Accessed 17 Apr. 2025].
-[21] GitHub. (n.d.). GitHub Objects — PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/github_objects/ [Accessed 17 Apr. 2025].
+<a id="02">[02]</a> Python Software Foundation. (n.d.). json — JSON encoder and decoder. Available at: https://docs.python.org/3/library/json.html [Accessed 17 Apr. 2025]. 
+
+<a id="03">[03]</a> Python Software Foundation. (n.d.). collections — High-performance container datatypes. Available at: https://docs.python.org/3/library/collections.html#collections.Counter [Accessed 17 Apr. 2025].  
+
+<a id="04">[04]</a> Requests. (n.d.). Requests Quickstart. Available at: https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request [Accessed 17 Apr. 2025].  
+
+<a id="05">[05]</a> Requests. (n.d.). Response.json() — Requests 2.x documentation. Available at: https://docs.python-requests.org/en/latest/api/#requests.Response.json [Accessed 17 Apr. 2025].  
+
+<a id="06">[06]</a> Python Software Foundation. (n.d.). Data Structures. Available at: https://docs.python.org/3/tutorial/datastructures.html [Accessed 17 Apr. 2025].  
+
+<a id="07">[07]</a> Python Software Foundation. (n.d.). sorted() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#sorted [Accessed 17 Apr. 2025].  
+
+<a id="08">[08]</a> Python Software Foundation. (n.d.). set — Set types. Available at: https://docs.python.org/3/library/stdtypes.html#set [Accessed 17 Apr. 2025].  
+
+<a id="09">[09]</a> Python Software Foundation. (n.d.). len() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#len [Accessed 17 Apr. 2025].  
+
+<a id="10">[10]</a> Python Software Foundation. (n.d.). print() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#print [Accessed 17 Apr. 2025].  
+
+<a id="11">[11]</a> Python Software Foundation. (n.d.). for Statements — Python documentation. Available at: https://docs.python.org/3/tutorial/controlflow.html#for-statements [Accessed 17 Apr. 2025].  
+
+<a id="12">[12]</a> Python Software Foundation. (n.d.). if Statements — Python documentation. Available at: https://docs.python.org/3/tutorial/controlflow.html#if-statements [Accessed 17 Apr. 2025].  
+
+<a id="13">[13]</a> Deck of Cards API. (n.d.). Deck of Cards API Documentation. Available at: https://deckofcardsapi.com/ [Accessed 17 Apr. 2025].  
+
+<a id="14">[14]</a> Python Software Foundation. (n.d.). open() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#open [Accessed 17 Apr. 2025].  
+
+<a id="15">[15]</a> Python Software Foundation. (n.d.). json.dump() — Python documentation. Available at: https://docs.python.org/3/library/json.html#json.dump [Accessed 17 Apr. 2025].  
+
+<a id="16">[16]</a> Python Software Foundation. (n.d.). main — Top-level script environment. Available at: https://docs.python.org/3/library/__main__.html [Accessed 17 Apr. 2025].  
+
+<a id="17">[17]</a> Python Software Foundation. (n.d.). re — Regular expression operations. Available at: https://docs.python.org/3/library/re.html [Accessed 17 Apr. 2025].  
+
+<a id="18">[18]</a> GitHub. (n.d.). PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/ [Accessed 17 Apr. 2025].  
+
+<a id="19">[19]</a> Python Software Foundation. (n.d.). getattr() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#getattr [Accessed 17 Apr. 2025].  
+
+<a id="20">[20]</a> Python Software Foundation. (n.d.). re.sub() — Python documentation. Available at: https://docs.python.org/3/library/re.html#re.sub [Accessed 17 Apr. 2025].  
+
+<a id="21">[21]</a> GitHub. (n.d.). GitHub Objects — PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/github_objects/ [Accessed 17 Apr. 2025].  
+ 

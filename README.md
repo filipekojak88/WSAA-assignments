@@ -101,11 +101,11 @@ Secure token-based authentication handling
 - Prints a clean summary of the hand and its evaluation
 
 `Scrpt`:
-The requests module is used to send HTTP requests to the Deck of Cards API. The requests.get() function is referenced in the script to fetch the shuffled deck and draw cards from it [1](#1) [4](#4). The response.json() function is used to parse the response from the API [5]#(5).
-The json module is employed to handle the JSON responses returned by the API. The json method is used to decode the API responses into Python dictionaries [2](#2).
-The collections.Counter is utilized to count the occurrences of values and suits among the drawn cards. The Counter class helps identify pairs and triples in the deck [3](#3).
-The sorted() function is used to sort the card values' indices to check if they form a straight [7](#7).
-The set data structure is used to check if all the drawn cards are of the same suit by ensuring the set of suits has only one unique value [8](#8).
+The requests module is used to send HTTP requests to the Deck of Cards API. The requests.get() function is referenced in the script to fetch the shuffled deck and draw cards from it [01](#01) [04](#04). The response.json() function is used to parse the response from the API [05]#(05).
+The json module is employed to handle the JSON responses returned by the API. The json method is used to decode the API responses into Python dictionaries [02](#02).
+The collections.Counter is utilized to count the occurrences of values and suits among the drawn cards. The Counter class helps identify pairs and triples in the deck [03](#03).
+The sorted() function is used to sort the card values' indices to check if they form a straight [07](#07).
+The set data structure is used to check if all the drawn cards are of the same suit by ensuring the set of suits has only one unique value [08](#08).
 
 ### Assignment 03 - CSO Dataset Fetcher
 

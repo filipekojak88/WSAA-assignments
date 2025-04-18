@@ -155,7 +155,7 @@ The script starts by using the requests library to get the content of a file fro
 
 To change the content of the file, the script uses Python’s re module. Specifically, it uses re.sub() to search for the name "Andrew" and replace it with "Filipe". The \b ensures it matches only the full word "Andrew", and re.IGNORECASE makes sure the case (like ANDREW or andrew) doesn’t matter. This is a great example of how regular expressions let you find and edit text in a powerful way [10](#10), [11](#11).
 
-The GitHub interaction happens thanks to the PyGithub library, which makes it easier to connect with GitHub using Python. After logging in with an API key, the script gets a specific repository and the file you want to edit. Using `get_contents()` retrieves the file, and `update_file()` sends the new version of the file back to GitHub. PyGithub handles the hard stuff behind the scenes like authentication and formatting the update request [12](#12), [13](#13).
+The GitHub interaction happens thanks to the PyGithub library, which makes it easier to connect with GitHub using Python. After logging in with an API key, the script gets a specific repository and the file you want to edit. Using `get_contents()` retrieves the file, and `update_file()` sends the new version of the file back to GitHub. PyGithub handles the hard stuff behind the scenes like authentication and formatting the update request [12](#12).
 
 ## Contributing
 
@@ -183,7 +183,7 @@ I am currently a Quality Engineer with a Production Engineering & Management bac
 
 <a id="05">[05]</a> GeeksforGeeks. (2023). Working with JSON data in Python. Available at: https://www.geeksforgeeks.org/working-with-json-data-in-python/ [Accessed 17 Apr. 2025]. 
 
-<a id="06">[06]</a> W3Schools. (n.d.). Python Collections Module. Available at: https://www.w3schools.com/python/ref_collections_counter.asp [Accessed 17 Apr. 2025]. 
+<a id="06">[06]</a> W3Schools. (n.d.). Python Collections Module. Available at: https://www.geeksforgeeks.org/python-collections-module/ [Accessed 17 Apr. 2025]. 
 
 <a id="07">[07]</a> Real Python. (n.d.). Reading and Writing Files in Python. Available at: https://realpython.com/read-write-files-python/ [Accessed 17 Apr. 2025].
  
@@ -191,10 +191,9 @@ I am currently a Quality Engineer with a Production Engineering & Management bac
 
 <a id="09">[09]</a> GeeksforGeeks. (n.d.). What does if name == “main” do in Python? Available at: https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/ [Accessed 17 Apr. 2025].
 
-<a id="10">[10]</a> GeeksforGeeks. (n.d.). re.sub() in Python. Available at: https://www.geeksforgeeks.org/python-re-sub/ [Accessed 17 Apr. 2025].
+<a id="10">[10]</a> GeeksforGeeks. (n.d.). re.sub() in Python. Available at: https://www.geeksforgeeks.org/re-sub-python-regex/ [Accessed 17 Apr. 2025].
 
 <a id="11">[11]</a> Python Software Foundation. (n.d.). re.sub() — Python documentation. Available at: https://docs.python.org/3/library/re.html#re.sub [Accessed 17 Apr. 2025].  
 
-<a id="12">[12]</a> GitHub. (n.d.). PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/ [Accessed 17 Apr. 2025]. 
-
-<a id="13">[13]</a> GitHub. (n.d.). GitHub Objects — PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/github_objects/ [Accessed 17 Apr. 2025].  
+<a id="12">[12]</a> GitHub. (n.d.). PyGithub. Available at: https://github.com/PyGithub/PyGithub [Accessed 17 Apr. 2025]. 
+ 

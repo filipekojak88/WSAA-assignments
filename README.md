@@ -105,11 +105,11 @@ Ensure your config.py file is correctly set up before running Assignment 04.
 
 `Scrpt`:
 
-This script uses the requests library to talk to the Deck of Cards API online. It sends a request to get a new shuffled deck and then draws five cards from it. The requests.get() function is what actually makes that connection, and .json() helps turn the API response into a Python dictionary so we can easily work with the data [01](#01), [02](#02), [03](#03), (04)[#04].
+This script uses the requests library to talk to the Deck of Cards API online. It sends a request to get a new shuffled deck and then draws five cards from it. The requests.get() function is what actually makes that connection, and .json() helps turn the API response into a Python dictionary so we can easily work with the data [01](#01), [02](#02), [03](#03), [04](#04).
 
-We use the json module to handle the data that comes back from the API in JSON format. This is important because the card info (like the values and suits) comes in that format, and json makes it easy to turn it into something Python can understand and work with (05)[#05].
+We use the json module to handle the data that comes back from the API in JSON format. This is important because the card info (like the values and suits) comes in that format, and json makes it easy to turn it into something Python can understand and work with [05](#05).
 
-The Counter class from the collections module helps us count how many times each card value and suit shows up in the hand. It’s super useful for figuring out if we have pairs, triples, or all cards of the same suit, without needing to write a lot of code ourselves (06)[#06].
+The Counter class from the collections module helps us count how many times each card value and suit shows up in the hand. It’s super useful for figuring out if we have pairs, triples, or all cards of the same suit, without needing to write a lot of code ourselves [06](#06).
 
 ### Assignment 03 - CSO Dataset Fetcher
 
@@ -127,13 +127,13 @@ https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/FIQ02/JSON
 
 `Scrpt`:
 
-This script uses the requests library to connect to an online API and get data from it. The requests.get() function is what actually sends the request to the URL and waits for the response. It's like asking the website for information and then waiting for the answer. Once we get a response, we use .json() to convert the data into a format that Python can understand and work with easily, turning it into a dictionary [02](#02), [03](#03), (04)[#04].
+This script uses the requests library to connect to an online API and get data from it. The requests.get() function is what actually sends the request to the URL and waits for the response. It's like asking the website for information and then waiting for the answer. Once we get a response, we use .json() to convert the data into a format that Python can understand and work with easily, turning it into a dictionary [02](#02), [03](#03), [04](#04).
 
-We use json.dump() to write the data into a .json file so we can store it and maybe use it later without needing to download it again. This is helpful when working with large datasets or when you need to access the data offline (05)[#05], (07)[#07].
+We use json.dump() to write the data into a .json file so we can store it and maybe use it later without needing to download it again. This is helpful when working with large datasets or when you need to access the data offline [05](#05), [07](#07).
 
-The open() function is used to create or open a file on the computer. In the store_file() function, we open a file called cso.json in write mode and then save the data into it. It’s a simple but powerful way to save stuff from the code to files (08)[#08].
+The open() function is used to create or open a file on the computer. In the store_file() function, we open a file called cso.json in write mode and then save the data into it. It’s a simple but powerful way to save stuff from the code to files [08](#08).
 
-Finally, the if __name__ == "__main__": part makes sure that the script only runs the store_file(URL) line if the file is run directly. This is to control how and when code is executed, especially when working with functions that might also be used in other scripts (#09)[09].
+Finally, the if __name__ == "__main__": part makes sure that the script only runs the store_file(URL) line if the file is run directly. This is to control how and when code is executed, especially when working with functions that might also be used in other scripts [#09](09).
 
 ### Assignment 04 - GitHub File Updater
 
@@ -151,11 +151,11 @@ Finally, the if __name__ == "__main__": part makes sure that the script only run
 
 `Scrpt`:
 
-The script starts by using the requests library to get the content of a file from a GitHub repository through its direct download URL. Then, by accessing `.text`, we get the file content as a plain string that we can work with (02)[#02], (03)[#03].
+The script starts by using the requests library to get the content of a file from a GitHub repository through its direct download URL. Then, by accessing `.text`, we get the file content as a plain string that we can work with [02](#02), [03](#03).
 
-To change the content of the file, the script uses Python’s re module. Specifically, it uses re.sub() to search for the name "Andrew" and replace it with "Filipe". The \b ensures it matches only the full word "Andrew", and re.IGNORECASE makes sure the case (like ANDREW or andrew) doesn’t matter. This is a great example of how regular expressions let you find and edit text in a powerful way (10)[#10], (11)[#11].
+To change the content of the file, the script uses Python’s re module. Specifically, it uses re.sub() to search for the name "Andrew" and replace it with "Filipe". The \b ensures it matches only the full word "Andrew", and re.IGNORECASE makes sure the case (like ANDREW or andrew) doesn’t matter. This is a great example of how regular expressions let you find and edit text in a powerful way [10](#10), [11](#11).
 
-The GitHub interaction happens thanks to the PyGithub library, which makes it easier to connect with GitHub using Python. After logging in with an API key, the script gets a specific repository and the file you want to edit. Using `get_contents()` retrieves the file, and `update_file()` sends the new version of the file back to GitHub. PyGithub handles the hard stuff behind the scenes like authentication and formatting the update request (12)[#12], (13)[#13].
+The GitHub interaction happens thanks to the PyGithub library, which makes it easier to connect with GitHub using Python. After logging in with an API key, the script gets a specific repository and the file you want to edit. Using `get_contents()` retrieves the file, and `update_file()` sends the new version of the file back to GitHub. PyGithub handles the hard stuff behind the scenes like authentication and formatting the update request [12](#12), [13](#13).
 
 ## Contributing
 

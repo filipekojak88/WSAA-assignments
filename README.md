@@ -1,6 +1,6 @@
 # WSAA Assignments Repository
 
-This repository contains completed Python assignments for the **Web Services and Application module. Each assignment demonstrates practical usage of Python for web services, APIs, and GitHub automation.
+This repository contains completed Python assignments for the **Web Services and Application** module. Each assignment demonstrates practical usage of Python for web services, APIs, and GitHub automation.
 
 ---
 
@@ -18,7 +18,6 @@ This repository contains completed Python assignments for the **Web Services and
 - [Contributing](#contributing)
 - [License](#license)
 - [About the Author](#About-the-Author)
-- [Contact](#contact)
 - [Reference](#Reference)
 
 ---
@@ -43,22 +42,26 @@ You can clone the repository and run the assignments using any Python 3 environm
 ## Installation
 
 #### Clone the repository
+
 ```bash
 git clone https://github.com/filipekojak88/wsaa-assignments.git
 ```
 
 #### Navigate to the project directory
+
 ```bash
 cd wsaa-assignments
 ```
 
 #### (Optional) Create and activate a virtual environment
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 ```
 
 #### Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -77,10 +80,10 @@ Ensure your config.py file is correctly set up before running Assignment 04.
 
 ## Features
 
-Python scripting with real-world API integration
-Practical examples of working with JSON and RESTful APIs
-Automated GitHub repository interaction
-Secure token-based authentication handling
+- Python scripting with real-world API integration
+- Practical examples of working with JSON and RESTful APIs
+- Automated GitHub repository interaction
+- Secure token-based authentication handling
 
 ## Assignment Summaries
 
@@ -92,7 +95,7 @@ Secure token-based authentication handling
 - Pairs
 - Triples
 - Straights (including Ace-low)
-- Flushes (same suit)
+- Same suit
 
 `Key Features`:
 - Uses Deck of Cards API
@@ -101,11 +104,12 @@ Secure token-based authentication handling
 - Prints a clean summary of the hand and its evaluation
 
 `Scrpt`:
-The requests module is used to send HTTP requests to the Deck of Cards API. The requests.get() function is referenced in the script to fetch the shuffled deck and draw cards from it [01](#01) [04](#04). The response.json() function is used to parse the response from the API [05]#(05).
-The json module is employed to handle the JSON responses returned by the API. The json method is used to decode the API responses into Python dictionaries [02](#02).
-The collections.Counter is utilized to count the occurrences of values and suits among the drawn cards. The Counter class helps identify pairs and triples in the deck [03](#03).
-The sorted() function is used to sort the card values' indices to check if they form a straight [07](#07).
-The set data structure is used to check if all the drawn cards are of the same suit by ensuring the set of suits has only one unique value [08](#08).
+
+This script uses the requests library to talk to the Deck of Cards API online. It sends a request to get a new shuffled deck and then draws five cards from it. The requests.get() function is what actually makes that connection, and .json() helps turn the API response into a Python dictionary so we can easily work with the data [01](#01), [02](#02), [03](#03), (04)[#04].
+
+We use the json module to handle the data that comes back from the API in JSON format. This is important because the card info (like the values and suits) comes in that format, and json makes it easy to turn it into something Python can understand and work with (05)[#05].
+
+The Counter class from the collections module helps us count how many times each card value and suit shows up in the hand. It’s super useful for figuring out if we have pairs, triples, or all cards of the same suit, without needing to write a lot of code ourselves (06)[#06].
 
 ### Assignment 03 - CSO Dataset Fetcher
 
@@ -121,6 +125,16 @@ The set data structure is used to check if all the drawn cards are of the same s
 `API Endpoint`:
 https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/FIQ02/JSON-stat/2.0/en
 
+`Scrpt`:
+
+This script uses the requests library to connect to an online API and get data from it. The requests.get() function is what actually sends the request to the URL and waits for the response. It's like asking the website for information and then waiting for the answer. Once we get a response, we use .json() to convert the data into a format that Python can understand and work with easily, turning it into a dictionary [02](#02), [03](#03), (04)[#04].
+
+We use json.dump() to write the data into a .json file so we can store it and maybe use it later without needing to download it again. This is helpful when working with large datasets or when you need to access the data offline (05)[#05], (07)[#07].
+
+The open() function is used to create or open a file on the computer. In the store_file() function, we open a file called cso.json in write mode and then save the data into it. It’s a simple but powerful way to save stuff from the code to files (08)[#08].
+
+Finally, the if __name__ == "__main__": part makes sure that the script only runs the store_file(URL) line if the file is run directly. This is to control how and when code is executed, especially when working with functions that might also be used in other scripts (#09)[09].
+
 ### Assignment 04 - GitHub File Updater
 
 `File`: assignment04-github.py
@@ -131,9 +145,17 @@ https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/FIQ02/JSON
 - Push the updated file back to the repo.
 
 `Key Features`:
-- Secure API token handling via .gitignored config.py
+- Secure API token handling via `.gitignored` and `config.py`
 - GitHub automation with PyGithub
 - Simple yet powerful text manipulation workflow
+
+`Scrpt`:
+
+The script starts by using the requests library to get the content of a file from a GitHub repository through its direct download URL. Then, by accessing `.text`, we get the file content as a plain string that we can work with (02)[#02], (03)[#03].
+
+To change the content of the file, the script uses Python’s re module. Specifically, it uses re.sub() to search for the name "Andrew" and replace it with "Filipe". The \b ensures it matches only the full word "Andrew", and re.IGNORECASE makes sure the case (like ANDREW or andrew) doesn’t matter. This is a great example of how regular expressions let you find and edit text in a powerful way (10)[#10], (11)[#11].
+
+The GitHub interaction happens thanks to the PyGithub library, which makes it easier to connect with GitHub using Python. After logging in with an API key, the script gets a specific repository and the file you want to edit. Using `get_contents()` retrieves the file, and `update_file()` sends the new version of the file back to GitHub. PyGithub handles the hard stuff behind the scenes like authentication and formatting the update request (12)[#12], (13)[#13].
 
 ## Contributing
 
@@ -151,45 +173,29 @@ I am currently a Quality Engineer with a Production Engineering & Management bac
 
 ## Reference:
 
-<a id="01">[01]</a> Requests. (n.d.). Requests: HTTP for Humans. Available at: https://docs.python-requests.org/en/latest/ [Accessed 17 Apr. 2025].  
+<a id="01">[01]</a> Deck of Cards API. (n.d.). Deck of Cards API Documentation. Available at: https://deckofcardsapi.com/ [Accessed 17 Apr. 2025].  
 
-<a id="02">[02]</a> Python Software Foundation. (n.d.). json — JSON encoder and decoder. Available at: https://docs.python.org/3/library/json.html [Accessed 17 Apr. 2025]. 
+<a id="02">[02]</a> Requests. (n.d.). Requests: HTTP for Humans. Available at: https://docs.python-requests.org/en/latest/ [Accessed 17 Apr. 2025].  
 
-<a id="03">[03]</a> Python Software Foundation. (n.d.). collections — High-performance container datatypes. Available at: https://docs.python.org/3/library/collections.html#collections.Counter [Accessed 17 Apr. 2025].  
+<a id="03">[03]</a> Requests. (n.d.). Requests Quickstart. Available at: https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request [Accessed 17 Apr. 2025].
 
-<a id="04">[04]</a> Requests. (n.d.). Requests Quickstart. Available at: https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request [Accessed 17 Apr. 2025].  
+<a id="04">[04]</a> Requests. (n.d.). Response.json() — Requests 2.x documentation. Available at: https://docs.python-requests.org/en/latest/api/#requests.Response.json [Accessed 17 Apr. 2025]. 
 
-<a id="05">[05]</a> Requests. (n.d.). Response.json() — Requests 2.x documentation. Available at: https://docs.python-requests.org/en/latest/api/#requests.Response.json [Accessed 17 Apr. 2025].  
+<a id="05">[05]</a> Python Software Foundation. (n.d.). json — JSON encoder and decoder. Available at: https://docs.python.org/3/library/json.html [Accessed 17 Apr. 2025]. 
 
-<a id="06">[06]</a> Python Software Foundation. (n.d.). Data Structures. Available at: https://docs.python.org/3/tutorial/datastructures.html [Accessed 17 Apr. 2025].  
+<a id="06">[06]</a> Python Software Foundation. (n.d.). collections — High-performance container datatypes. Available at: https://docs.python.org/3/library/collections.html#collections.Counter [Accessed 17 Apr. 2025].  
 
-<a id="07">[07]</a> Python Software Foundation. (n.d.). sorted() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#sorted [Accessed 17 Apr. 2025].  
-
-<a id="08">[08]</a> Python Software Foundation. (n.d.). set — Set types. Available at: https://docs.python.org/3/library/stdtypes.html#set [Accessed 17 Apr. 2025].  
-
-<a id="09">[09]</a> Python Software Foundation. (n.d.). len() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#len [Accessed 17 Apr. 2025].  
-
-<a id="10">[10]</a> Python Software Foundation. (n.d.). print() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#print [Accessed 17 Apr. 2025].  
-
-<a id="11">[11]</a> Python Software Foundation. (n.d.). for Statements — Python documentation. Available at: https://docs.python.org/3/tutorial/controlflow.html#for-statements [Accessed 17 Apr. 2025].  
-
-<a id="12">[12]</a> Python Software Foundation. (n.d.). if Statements — Python documentation. Available at: https://docs.python.org/3/tutorial/controlflow.html#if-statements [Accessed 17 Apr. 2025].  
-
-<a id="13">[13]</a> Deck of Cards API. (n.d.). Deck of Cards API Documentation. Available at: https://deckofcardsapi.com/ [Accessed 17 Apr. 2025].  
-
-<a id="14">[14]</a> Python Software Foundation. (n.d.). open() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#open [Accessed 17 Apr. 2025].  
-
-<a id="15">[15]</a> Python Software Foundation. (n.d.). json.dump() — Python documentation. Available at: https://docs.python.org/3/library/json.html#json.dump [Accessed 17 Apr. 2025].  
-
-<a id="16">[16]</a> Python Software Foundation. (n.d.). main — Top-level script environment. Available at: https://docs.python.org/3/library/__main__.html [Accessed 17 Apr. 2025].  
-
-<a id="17">[17]</a> Python Software Foundation. (n.d.). re — Regular expression operations. Available at: https://docs.python.org/3/library/re.html [Accessed 17 Apr. 2025].  
-
-<a id="18">[18]</a> GitHub. (n.d.). PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/ [Accessed 17 Apr. 2025].  
-
-<a id="19">[19]</a> Python Software Foundation. (n.d.). getattr() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#getattr [Accessed 17 Apr. 2025].  
-
-<a id="20">[20]</a> Python Software Foundation. (n.d.). re.sub() — Python documentation. Available at: https://docs.python.org/3/library/re.html#re.sub [Accessed 17 Apr. 2025].  
-
-<a id="21">[21]</a> GitHub. (n.d.). GitHub Objects — PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/github_objects/ [Accessed 17 Apr. 2025].  
  
+<a id="07">[07]</a> Python Software Foundation. (n.d.). json.dump() — Python documentation. Available at: https://docs.python.org/3/library/json.html#json.dump [Accessed 17 Apr. 2025]. 
+ 
+<a id="08">[08]</a> Python Software Foundation. (n.d.). open() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#open [Accessed 17 Apr. 2025]. 
+
+<a id="09">[09]</a> Python Software Foundation. (n.d.). main — Top-level script environment. Available at: https://docs.python.org/3/library/__main__.html [Accessed 17 Apr. 2025].  
+
+<a id="10">[10]</a> Python Software Foundation. (n.d.). re — Regular expression operations. Available at: https://docs.python.org/3/library/re.html [Accessed 17 Apr. 2025].  
+
+<a id="11">[11]</a> Python Software Foundation. (n.d.). re.sub() — Python documentation. Available at: https://docs.python.org/3/library/re.html#re.sub [Accessed 17 Apr. 2025].  
+
+<a id="12">[12]</a> GitHub. (n.d.). PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/ [Accessed 17 Apr. 2025]. 
+
+<a id="13">[13]</a> GitHub. (n.d.). GitHub Objects — PyGithub Documentation. Available at: https://pygithub.readthedocs.io/en/latest/github_objects/ [Accessed 17 Apr. 2025].  

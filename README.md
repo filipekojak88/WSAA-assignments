@@ -177,22 +177,21 @@ I am currently a Quality Engineer with a Production Engineering & Management bac
 
 <a id="02">[02]</a> Requests. (n.d.). Requests: HTTP for Humans. Available at: https://docs.python-requests.org/en/latest/ [Accessed 17 Apr. 2025].  
 
-<a id="03">[03]</a> Requests. (n.d.). Requests Quickstart. Available at: https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request [Accessed 17 Apr. 2025].
+<a id="03">[03]</a> Real Python. (n.d.). Python’s Requests Library (Guide). Available at: https://realpython.com/python-requests/ [Accessed 17 Apr. 2025].
 
-<a id="04">[04]</a> Requests. (n.d.). Response.json() — Requests 2.x documentation. Available at: https://docs.python-requests.org/en/latest/api/#requests.Response.json [Accessed 17 Apr. 2025]. 
+<a id="04">[04]</a> W3Schools. (n.d.). Python Requests Module. Available at: https://www.w3schools.com/python/module_requests.asp [Accessed 17 Apr. 2025].    
 
-<a id="05">[05]</a> Python Software Foundation. (n.d.). json — JSON encoder and decoder. Available at: https://docs.python.org/3/library/json.html [Accessed 17 Apr. 2025]. 
+<a id="05">[05]</a> GeeksforGeeks. (2023). Working with JSON data in Python. Available at: https://www.geeksforgeeks.org/working-with-json-data-in-python/ [Accessed 17 Apr. 2025]. 
 
-<a id="06">[06]</a> Python Software Foundation. (n.d.). collections — High-performance container datatypes. Available at: https://docs.python.org/3/library/collections.html#collections.Counter [Accessed 17 Apr. 2025].  
+<a id="06">[06]</a> W3Schools. (n.d.). Python Collections Module. Available at: https://www.w3schools.com/python/ref_collections_counter.asp [Accessed 17 Apr. 2025]. 
 
- 
-<a id="07">[07]</a> Python Software Foundation. (n.d.). json.dump() — Python documentation. Available at: https://docs.python.org/3/library/json.html#json.dump [Accessed 17 Apr. 2025]. 
+<a id="07">[07]</a> Real Python. (n.d.). Reading and Writing Files in Python. Available at: https://realpython.com/read-write-files-python/ [Accessed 17 Apr. 2025].
  
 <a id="08">[08]</a> Python Software Foundation. (n.d.). open() — Python documentation. Available at: https://docs.python.org/3/library/functions.html#open [Accessed 17 Apr. 2025]. 
 
-<a id="09">[09]</a> Python Software Foundation. (n.d.). main — Top-level script environment. Available at: https://docs.python.org/3/library/__main__.html [Accessed 17 Apr. 2025].  
+<a id="09">[09]</a> GeeksforGeeks. (n.d.). What does if name == “main” do in Python? Available at: https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/ [Accessed 17 Apr. 2025].
 
-<a id="10">[10]</a> Python Software Foundation. (n.d.). re — Regular expression operations. Available at: https://docs.python.org/3/library/re.html [Accessed 17 Apr. 2025].  
+<a id="10">[10]</a> GeeksforGeeks. (n.d.). re.sub() in Python. Available at: https://www.geeksforgeeks.org/python-re-sub/ [Accessed 17 Apr. 2025].
 
 <a id="11">[11]</a> Python Software Foundation. (n.d.). re.sub() — Python documentation. Available at: https://docs.python.org/3/library/re.html#re.sub [Accessed 17 Apr. 2025].  
 
